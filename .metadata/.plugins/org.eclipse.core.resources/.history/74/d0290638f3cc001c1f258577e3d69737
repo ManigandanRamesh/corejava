@@ -1,0 +1,10 @@
+package jdbcconnections;
+
+public class DataBaseMetaDataEx {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}
