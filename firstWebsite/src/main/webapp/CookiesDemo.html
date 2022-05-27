@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Cookies State</title>
+</head>
+<body>
+	<div>
+		<input type=text name='commission' id='commission' value="5" />
+		<!--
+				 this element and its value is visible in the browser, but 
+				will not be transfer to the server because it is not part of(child element of) the <form> element 
+				-->
+	</div>
+	<form action="/firstWebsite/CookiesDemo?department=id&city=madurai"
+		method="post">
+		<!-- ?department=id&city=madurai is example for query String -->
+		<div style="Width: 50%; margin: 0 auto">
+			<div>
+				<label for='salary'>Salary:</label> <input type=text name='salary'
+					id='salary' value="20000" />
+				<!-- salary and submit are examples for visible values in the browser  -->
+			</div>
+			<div style="width: 50%; margin: 0 auto">
+				<input type="hidden" value="50000" name="bonus" id="bonus" />
+				<!-- hidden value will be in the browser but not visible -->
+			</div>
+			<div style="width: 50%; margin: 0 auto">
+				<input type="submit" value="post" name="submit">
+			</div>
+		</div>
+	</form>
+</body>
+</html>

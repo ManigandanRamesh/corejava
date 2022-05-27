@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>GlobalState</title>
+</head>
+<body>
+	<form action="/firstWebsite/GlobalState?department=id&city=madurai" method="post">
+	<!-- department=id&city=madurai is example for query string --> 
+		<div>
+			<div>
+				<label for='salary'>Salary:</label> 
+				<input type=text name='salary' id='salary' value="20000"/>
+			</div>
+			<div style="Width: 50%; margin: 0 auto">
+				<input type="hidden" value="50000" name="bonus"id="bonus" >
+			</div>
+			<div style="Width: 50%; margin: 0 auto">
+				<input type="submit" value="set" name="submit" >
+			</div>
+			<div style="Width: 50%; margin: 0 auto">
+				<input type="submit" value="fetch" name="submit" >
+				<!--   input element is stored data in the client side and is visible in the browser -->
+			</div>
+		</div>
+	</form>
+
+</body>
+</html>

@@ -1,3 +1,9 @@
+.metadata
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
 # Compiled class file
 *.class
 
